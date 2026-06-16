@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: spring-cli-caching-server
+  main:
+    banner-mode: off        # ← must be under spring.main
+    log-startup-info: false # ← suppresses startup log lines
+  shell:
+    interactive:
+      enabled: true
+    script:
+      enabled: true
+
+logging:
+  level:
+    root: INFO
+
+server:
+  port: ${port:8080}
