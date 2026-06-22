@@ -12,7 +12,7 @@ public class Config {
     @Value("${port}")
     private String port;
 
-    @Value("${target}")
+    @Value("${proxy.target}")
     private String target;
 
     @ShellMethod(
